@@ -1,4 +1,8 @@
-type TButtonProps = {
+"use client";
+
+import React from "react";
+
+export type TButtonProps = {
   children: React.ReactNode;
   className?: string;
   variant?: "primary" | "dark" | "ghost";
@@ -28,7 +32,8 @@ const Button = ({
 
   return (
     <button
-      className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${className} {...props}`}>
+      {...props}
+      className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`}>
       {children}
     </button>
   );
