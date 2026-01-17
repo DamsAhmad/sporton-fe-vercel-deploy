@@ -4,7 +4,7 @@ import priceFormatter from "@/app/utils/price-formatter";
 import { getProductDetail } from "@/app/services/product.service";
 import { getImageUrl } from "@/app/lib/api";
 
-type TPageProps = {
+export type TPageProps = {
   params: Promise<{ id: string }>;
 };
 
@@ -15,7 +15,7 @@ const ProductDetail = async ({ params }: TPageProps) => {
 
   return (
     <main className="container mx-auto py-40 flex gap-12">
-      <div className="bg-primary-light aspect-square min-w-140 flex justify-center items-center">
+      <div className="bg-primary-light aspect-square min-w-120 flex justify-center items-center">
         <Image
           src={getImageUrl(product.imageUrl)}
           width={550}
