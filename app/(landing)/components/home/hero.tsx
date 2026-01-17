@@ -4,16 +4,16 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section id="hero-section" className="container mx-auto h-screen flex">
+    <section id="hero-section" className="container mx-auto h-screen flex ">
       <div className="relative self-center">
         <Image
           src="/images/img-basketball.png"
           width={332}
           height={323}
           alt="image sporton basket"
-          className="grayscale absolute left-6 -top-6"
+          className="grayscale absolute left-6 top-24"
         />
-        <div className="relative ml-40 w-fit">
+        <div className="relative ml-40 w-fit mt-24">
           <div className="text-primary italic">Friday Sale, 50%</div>
           <h1 className="font-extrabold text-[85px] italic bg-gradient-to-b leading-tight from-black to-[#979797D1] bg-clip-text text-transparent">
             WEAR YOUR <br /> TOP-QUALITY <br /> SPORTSWEAR
@@ -23,7 +23,7 @@ const HeroSection = () => {
             that moves as fast as you do. Premium fabrics. Unmatched comfort.
             Limitless motion.
           </p>
-          <div className="flex gap-5 mt-14">
+          <div className="flex gap-5 mt-8">
             <Button>
               Explore More <FiFastForward />
             </Button>
@@ -43,7 +43,7 @@ const HeroSection = () => {
           width={524}
           height={598}
           alt="image sporton hero"
-          className="absolute right-18 top-3/8 -translate-y-1/2"
+          className="absolute right-18 top-1/2 -translate-y-1/2"
         />
       </div>
       <Image
